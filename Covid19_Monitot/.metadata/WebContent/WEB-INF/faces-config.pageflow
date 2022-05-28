@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15954312276200" configfile="/Covid19_Monitot/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="CreatProfile" id="pf15956077796413" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15956077796414 pf15956077796415" path="CreatProfile.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ProfileSuccess" id="pf15956077796416" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15956077796414" path="ProfileSuccess.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ProfileFail" id="pf15956077796417" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15956077796415" path="ProfileFail.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Login" id="pf15956944986260" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf15956944986261 pf15957413650640 pf15959154714560" path="Login.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="DocHome" id="pf15956944986262" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf15956944986261" path="DocHome.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Patientdetails" id="pf15957413650641" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf15957413650640" path="Patientdetails.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ShowPatient" id="pf15958290154760" referenceLink="//@navigationRule.4/@navigationCase.0/@toViewId|" outlinks="pf15958290154761" inlinks="pf15958290154761" path="ShowPatient.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Adminhome" id="pf15959154714561" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" inlinks="pf15959154714560" path="Adminhome.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Showdoc" id="pf15959168770292" referenceLink="//@navigationRule.6/@navigationCase.0/@toViewId|" outlinks="pf15959168770293" inlinks="pf15959168770293" path="Showdoc.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="PatientUpdate" id="pf15962097719220" referenceLink="//@navigationRule.7/@fromViewId|" outlinks="pf15962097719221" path="PatientUpdate.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="SuccessUpdate" id="pf15962097719222" referenceLink="//@navigationRule.9/@navigationCase.0/@toViewId|" inlinks="pf15962097719221 pf15962131678663 pf15964289678450" path="SuccessUpdate.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="Add" id="pf15962131678664" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf15962131678663" path="Add.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ChangePass" id="pf15964289678451" referenceLink="//@navigationRule.9/@fromViewId|" outlinks="pf15964289678450" path="ChangePass.jsp"/>
+  <links id="pf15956077796414" target="pf15956077796416" source="pf15956077796413" outcome="ProfileSuccess"/>
+  <links id="pf15956077796415" target="pf15956077796417" source="pf15956077796413" outcome="ProfileFail"/>
+  <links id="pf15956944986261" target="pf15956944986262" source="pf15956944986260" outcome="DocHome.jsp"/>
+  <links id="pf15957413650640" target="pf15957413650641" source="pf15956944986260" outcome="Patientdetails"/>
+  <links id="pf15958290154761" target="pf15958290154760" source="pf15958290154760" outcome="ShowPatient"/>
+  <links id="pf15959154714560" target="pf15959154714561" source="pf15956944986260" outcome="Adminhome"/>
+  <links id="pf15959168770293" target="pf15959168770292" source="pf15959168770292" outcome="Showdoc.jsp"/>
+  <links id="pf15962097719221" target="pf15962097719222" source="pf15962097719220" outcome="SuccessUpdate"/>
+  <links id="pf15962131678663" target="pf15962097719222" source="pf15962131678664" outcome="SuccessUpdate"/>
+  <links id="pf15964289678450" target="pf15962097719222" source="pf15964289678451" outcome="SuccessUpdate"/>
+</pageflow:Pageflow>

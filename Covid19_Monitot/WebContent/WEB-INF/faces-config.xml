@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>patientBean</managed-bean-name>
+		<managed-bean-class>com.covid.PatientBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	 <navigation-rule>
+	 <display-name>CreatProfile</display-name>
+	  <from-view-id>CreatProfile.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>ProfileSuccess</from-outcome>
+	   <to-view-id>ProfileSuccess.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	     <navigation-rule>
+	 <display-name>CreatProfile</display-name>
+	  <from-view-id>CreatProfile.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>ProfileFail</from-outcome>
+	   <to-view-id>ProfileFail.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    <navigation-rule>
+	 <display-name>Login</display-name>
+	  <from-view-id>Login.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>DocHome.jsp</from-outcome>
+	   <to-view-id>DocHome.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    <navigation-rule>
+	 <display-name>Login</display-name>
+	  <from-view-id>Login.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>Patientdetails</from-outcome>
+	   <to-view-id>Patientdetails.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	     <navigation-rule>
+	 <display-name>ShowPatient</display-name>
+	  <from-view-id>ShowPatient.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>ShowPatient</from-outcome>
+	   <to-view-id>ShowPatient.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    <navigation-rule>
+	 <display-name>Login</display-name>
+	  <from-view-id>Login.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>Adminhome</from-outcome>
+	   <to-view-id>Adminhome.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    <navigation-rule>
+	 <display-name>Showdoc</display-name>
+	  <from-view-id>Showdoc.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>Showdoc.jsp</from-outcome>
+	   <to-view-id>Showdoc.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	     <navigation-rule>
+	 <display-name>PatientUpdate</display-name>
+	  <from-view-id>PatientUpdate.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>SuccessUpdate</from-outcome>
+	   <to-view-id>SuccessUpdate.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    <navigation-rule>
+	 <display-name>Add</display-name>
+	  <from-view-id>Add.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>SuccessUpdate</from-outcome>
+	   <to-view-id>SuccessUpdate.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	     <navigation-rule>
+	 <display-name>ChangePass</display-name>
+	  <from-view-id>ChangePass.jsp</from-view-id> 
+	  <navigation-case> <from-outcome>SuccessUpdate</from-outcome>
+	   <to-view-id>SuccessUpdate.jsp</to-view-id> 
+	   </navigation-case>
+	    </navigation-rule>
+	    
+
+</faces-config>
