@@ -1,0 +1,30 @@
+
+save as Bank.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank</title>
+</head>
+<body style="background-color: lightskyblue">
+<form name = "f1" action="Login.jsp">
+            <div style="padding: 30px;font-size: 25px; margin-right: 00px; margin-left: 385px; border: 2px solid black;width: 40%;height: 120%; background-color: lightgoldenrodyellow;">
+                <h2 style="color: red; text-align: center;">ONLINE BANK SYSTEM</h2>
+                <table>
+                    <fieldset>
+                        <legend>Customer_Authentication:</legend>
+                        <label for="Name">CUSTOMER ID:</label>
+                        <input type=text  name="uname"><br><br>
+                        <label for="">PASSWORD:</label>
+                        <input type=password name="password"><br><br>
+                        <input type="submit" value ="Login"><br>
+                        <input type="reset" value = "Cancel">
+                    </fieldset>
+                    </table>
+                    </div>
+                    </form>
+            
+            
+</body>
+</html>
