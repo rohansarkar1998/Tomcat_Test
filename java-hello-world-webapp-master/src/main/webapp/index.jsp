@@ -1,20 +1,20 @@
 <html>
-<body>
-  <h2>Rohan</h2>
-<h3>Welcome to Myspace </h3>
-  
-<marquee>Welcome to Cloud </marquee>
-
-<marquee direction="up">Welcome to Cloud and DEVOPS </marquee>
-
-<marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
-  <marquee behavior="alternate">
-    Welcome to Cloud With DEVOPS
-  </marquee>
-</marquee>
-  <B> <U> <I> Jenkins Installation </B> </i> </u>
-    <B> <U> <I> Java ADD </B> </i> </u>
-    <B> <U> <I> TomCat Installation </B> </i> </u>
-    <B> <U> <I> Pipeline Build </B> </i> </u>
-</body>
+    <head>
+        <title>E-Commerce Blog</title>
+    </head>
+    <body style="background-color: aqua;">
+        <img src="E_Commerce.png" height="450 " style="margin-left: 300px; margin-top: 50px;">
+        <a href="https://www.amazon.com">VISIT AMAZON SITE</a>
+        <br>
+        <br>
+        <div style="margin-left: 300px;">
+        <ul>
+            <li style="font-size: x-large;"> B2C – Business to consumer</li>
+            <li style="font-size: x-large;">B2B – Business to business</li>
+            <li style="font-size: x-large;">C2B – Consumer to business</li>
+            <li style="font-size: x-large;">C2C – Consumer to consumer</li>
+        </ul>
+        </div>
+        <p style="text-align: right;"><b><i>Thank You</i></b></p>
+    </body>
 </html>
