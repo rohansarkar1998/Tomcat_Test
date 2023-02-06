@@ -132,6 +132,11 @@
 			<version>1.6.1</version>
 		</dependency>
 		<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.22</version>
+        </dependency>
+		<dependency>
 			<groupId>net.bndy</groupId>
 			<artifactId>spring-boot-starter-ftsi</artifactId>
 			<version>1.0</version>
@@ -148,6 +153,7 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+	
 	<build>
 		<resources>
 			<resource>
