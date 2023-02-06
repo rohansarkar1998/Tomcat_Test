@@ -1,25 +1,33 @@
 
-pipeline{
+pipeline {
     agent any
 
-    stage{
+    environment {
+
+            serverDetails = credentials('tomcat_deployer')
+
+    }
+
+    stages {
         stage("build") {
 
-        steps{
+        steps {
             echo 'build application'
+            echo "the credential is ${serverDetails}"
+            sh "${serverDetails}"
         }
     }
 
          stage("test") {
 
-        steps{
+        steps {
             echo 'test application'
         }
     }
     
          stage("deploye") {
 
-        steps{
+        steps {
             echo 'deploye application'
         }
     
